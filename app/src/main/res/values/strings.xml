@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Farm Management</string>
+    <string name="enter_credentials">Please enter your username and password…</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="incorrect_credentials">Incorrect credentials!</string>
+    <string name="welcome">Welcome %1$s</string>
+    <string name="logout">Logout</string>
+    <string name="view_farm_data">View Farm Data</string>
+    <string name="view_notifications">View Notifications</string>
+    <string name="operate_motor">Operate Motor</string>
+    <string name="harvest_new_crop">Harvest New Crop</string>
+    <string name="view_historical_data">View Historical Data</string>
+    <string name="title_activity_motor">Operate Motor</string>
+    <string name="motor_status">Motor Status %1$s</string>
+    <string name="toggle_motor">Turn Motor %1$s</string>
+    <string name="current_crop">Current crop: %1$s</string>
+    <string name="date">Date: %1$s</string>
+    <string name="recording_time">Recording time: %1$s</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="soil_moisture">Soil Moisture</string>
+    <string name="water_level">Water level in Storage tank</string>
+    <string name="details">Details</string>
+    <string name="productivity">Productivity</string>
+    <string name="enter_productivity">Enter productivity of selected crop</string>
+    <string name="crop">Crop</string>
+    <string name="estimated_productivity">Estimated Productivity</string>
+    <string name="market_rate">Market Rate of Seed</string>
+    <string name="proceed">Proceed</string>
+
+</resources>

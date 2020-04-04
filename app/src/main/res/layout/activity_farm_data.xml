@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FarmDataActivity">
+
+    <TableLayout
+        android:id="@+id/table_farmData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_details">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/temperature" />
+
+            <TextView
+                android:id="@+id/txt_temperature"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/humidity" />
+
+            <TextView
+                android:id="@+id/txt_humidity"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/soil_moisture" />
+
+            <TextView
+                android:id="@+id/txt_soilMoisture"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/water_level" />
+
+            <TextView
+                android:id="@+id/txt_waterLevel"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txt_recordingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/recording_time"
+        app:layout_constraintStart_toStartOf="@+id/txt_date"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+
+    <TextView
+        android:id="@+id/txt_currentCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/current_crop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_recordingTime" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/date"
+        app:layout_constraintStart_toStartOf="@+id/txt_currentCrop"
+        app:layout_constraintTop_toBottomOf="@+id/txt_currentCrop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
