@@ -1,7 +1,5 @@
 package com.amoghbhagwat.farmmanagement;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,12 +11,17 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
 
     public static final String IS_LOGIN = "isLogin";
     public static final String USERNAME = "username";
     public static final String FILE_NAME = "userInformation";
+
+    public static final String LOGIN = "admin";
+    public static final String PASSWORD = "admin";
 
     private Button btnLogin;
     private TextInputLayout txtUsername;
@@ -71,7 +74,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private boolean checkCredentials(String username, String password) {
-        // TODO: 03-Apr-20 implement login functionality
-        return true;
+        return username.equals(LOGIN) && password.equals(PASSWORD);
     }
 }

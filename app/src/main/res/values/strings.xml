@@ -13,8 +13,7 @@
     <string name="harvest_new_crop">Harvest New Crop</string>
     <string name="view_historical_data">View Historical Data</string>
     <string name="title_activity_motor">Operate Motor</string>
-    <string name="motor_status">Motor Status %1$s</string>
-    <string name="toggle_motor">Turn Motor %1$s</string>
+    <string name="motor_status">Motor</string>
     <string name="current_crop">Current crop: %1$s</string>
     <string name="date">Date: %1$s</string>
     <string name="recording_time">Recording time: %1$s</string>
