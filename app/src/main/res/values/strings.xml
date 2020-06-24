@@ -13,7 +13,7 @@
     <string name="harvest_new_crop">Harvest New Crop</string>
     <string name="view_historical_data">View Historical Data</string>
     <string name="title_activity_motor">Operate Motor</string>
-    <string name="motor_status">Motor</string>
+    <string name="motor_status">Motor turned %1$s</string>
     <string name="current_crop">Current crop: %1$s</string>
     <string name="date">Date: %1$s</string>
     <string name="recording_time">Recording time: %1$s</string>
@@ -26,7 +26,7 @@
     <string name="enter_productivity">Enter productivity of selected crop</string>
     <string name="crop">Crop</string>
     <string name="estimated_productivity">Estimated Productivity</string>
-    <string name="market_rate">Market Rate of Seed</string>
+    <string name="market_rate">Rate</string>
     <string name="proceed">Proceed</string>
 
 </resources>

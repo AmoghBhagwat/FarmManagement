@@ -35,11 +35,14 @@ public class MotorActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = preferences.edit();
             editor.putBoolean(MOTOR_STATUS, motorOn);
             editor.apply();
+
+            motorSwitch.setText(getString(R.string.motor_status, (motorOn) ? "ON" : "OFF"));
         });
     }
 
     private void updateMotorStatus() {
         motorOn = preferences.getBoolean(MOTOR_STATUS, false);
         motorSwitch.setChecked(motorOn);
+        motorSwitch.setText(getString(R.string.motor_status, (motorOn) ? "ON" : "OFF"));
     }
 }

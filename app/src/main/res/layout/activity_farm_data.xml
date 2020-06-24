@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/overviewbg_res"
     android:layout_height="match_parent"
     tools:context=".FarmDataActivity">
 
@@ -23,10 +24,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView android:text="@string/temperature" />
+            <TextView
+                android:text="@string/temperature"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
             <TextView
+                android:textColor="#000000"
                 android:id="@+id/txt_temperature"
+                android:textSize="24sp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
         </TableRow>
@@ -35,10 +41,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView android:text="@string/humidity" />
+            <TextView
+                android:text="@string/humidity"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
             <TextView
+                android:textColor="#000000"
                 android:id="@+id/txt_humidity"
+                android:textSize="24sp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
         </TableRow>
@@ -47,10 +58,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView android:text="@string/soil_moisture" />
+            <TextView
+                android:text="@string/soil_moisture"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
             <TextView
+                android:textColor="#000000"
                 android:id="@+id/txt_soilMoisture"
+                android:textSize="24sp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
         </TableRow>
@@ -59,10 +75,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView android:text="@string/water_level" />
+            <TextView
+                android:text="@string/water_level"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
             <TextView
+                android:textColor="#000000"
                 android:id="@+id/txt_waterLevel"
+                android:textSize="24sp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
         </TableRow>
@@ -70,41 +91,49 @@
     </TableLayout>
 
     <TextView
+        android:textColor="#000000"
         android:id="@+id/txt_recordingTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/recording_time"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/txt_date"
         app:layout_constraintTop_toBottomOf="@+id/txt_date" />
 
     <TextView
+        android:textColor="#000000"
         android:id="@+id/txt_currentCrop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/current_crop"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:textColor="#000000"
         android:id="@+id/txt_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/details"
+        android:textSize="24sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_recordingTime" />
 
     <TextView
+        android:textColor="#000000"
         android:id="@+id/txt_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/date"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/txt_currentCrop"
         app:layout_constraintTop_toBottomOf="@+id/txt_currentCrop" />
 </androidx.constraintlayout.widget.ConstraintLayout>

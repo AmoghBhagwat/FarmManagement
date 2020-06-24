@@ -4,7 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/overviewbg_res"
     tools:context=".HarvestCropActivity">
+
+    <Button
+        android:id="@+id/btn_proceedProductivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/proceed"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/table_productivity"
+        app:layout_constraintStart_toStartOf="@+id/table_productivity"
+        app:layout_constraintTop_toBottomOf="@+id/table_productivity" />
+
+    <TableLayout
+        android:id="@+id/table_productivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_selectCrop">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/crop"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/estimated_productivity"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/market_rate"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/list_selector_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Wheat"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="4620"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="₹250"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/list_selector_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Maize"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="4520"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="₹150"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/list_selector_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Rice"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="4770"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="₹300"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txt_selectCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Please select the next crop:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_productivity"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productivity" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_productivity"
@@ -14,6 +162,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:hint="@string/productivity"
+        android:textSize="24sp"
         app:helperText="@string/enter_productivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,65 +170,59 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TableLayout
-        android:id="@+id/table_productivity"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_productivity">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView android:text="@string/crop" />
-
-            <TextView
-                android:id="@+id/txt_crop"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView android:text="@string/estimated_productivity" />
-
-            <TextView
-                android:id="@+id/txt_estimatedProductivity"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView android:text="@string/market_rate" />
-
-            <TextView
-                android:id="@+id/txt_marketRate"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp" />
-        </TableRow>
-
-    </TableLayout>
-
-    <Button
-        android:id="@+id/btn_proceedProductivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/proceed"
-        app:layout_constraintEnd_toEndOf="@+id/table_productivity"
-        app:layout_constraintStart_toStartOf="@+id/table_productivity"
-        app:layout_constraintTop_toBottomOf="@+id/table_productivity" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+    <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+            android:textColor="#000000" android:text="@string/crop"
+                    android:textSize="24sp"/>
+
+                <TextView
+            android:textColor="#000000"
+                    android:id="@+id/txt_crop"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+            android:textColor="#000000" android:text="@string/estimated_productivity"
+                    android:textSize="24sp" />
+
+                <TextView
+            android:textColor="#000000"
+                    android:id="@+id/txt_estimatedProductivity"
+                    android:textSize="24sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+            android:textColor="#000000" android:text="@string/market_rate"
+                    android:textSize="24sp" />
+
+                <TextView
+            android:textColor="#000000"
+                    android:id="@+id/txt_marketRate"
+                    android:paddingStart="8dp"
+                    android:textSize="24sp"
+                    android:paddingEnd="8dp" />
+            </TableRow>
+    -->

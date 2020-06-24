@@ -52,7 +52,7 @@ public class FarmDataActivity extends AppCompatActivity {
     }
 
     private String getTemperature() {
-        return "10\u0176C";
+        return "10\u00B0C";
     }
 
     private String getHumidity() {

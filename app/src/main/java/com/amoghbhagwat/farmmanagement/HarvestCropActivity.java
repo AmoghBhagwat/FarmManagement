@@ -1,42 +1,30 @@
 package com.amoghbhagwat.farmmanagement;
 
+import android.os.Bundle;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.TextView;
-
 public class HarvestCropActivity extends AppCompatActivity {
-    private TextView crop;
-    private TextView estimatedProductivity;
-    private TextView marketRate;
+    private TableLayout cropsTable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_harvest_crop);
 
-        this.crop = findViewById(R.id.txt_crop);
-        this.estimatedProductivity = findViewById(R.id.txt_estimatedProductivity);
-        this.marketRate = findViewById(R.id.txt_marketRate);
+        this.cropsTable = findViewById(R.id.table_productivity);
 
         initialize();
     }
 
     private void initialize() {
-        crop.setText(getCrop());
-        estimatedProductivity.setText(getEstimatedProductivity());
-        marketRate.setText(getMarketRate());
-    }
+        for (int i = 0; i < cropsTable.getChildCount(); i++) {
+            TableRow row = (TableRow) cropsTable.getChildAt(i);
+            row.setOnClickListener(v -> {
 
-    private String getMarketRate() {
-        return "\u20B9100";
-    }
-
-    private String getEstimatedProductivity() {
-        return "100%";
-    }
-
-    private String getCrop() {
-        return "Wheat";
+            });
+        }
     }
 }

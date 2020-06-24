@@ -54,7 +54,8 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void initialize() {
-        txtWelcome.setText(getString(R.string.welcome, username));
+//        txtWelcome.setText(getString(R.string.welcome, username));
+        txtWelcome.setText(getString(R.string.welcome, "Farmer"));
 
         btnLogout.setOnClickListener(view -> {
             logout();
